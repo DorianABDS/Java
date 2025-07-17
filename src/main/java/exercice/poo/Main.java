@@ -32,15 +32,15 @@ public class Main {
         System.out.println("-------------------------------------");
 
         Mammal myMammal = new Mammal(
-                "Moumout",       // name
-                120.0,           // height
-                80.5,            // weight
-                "Herbivore",     // diet
-                "Forêt",         // habitat
-                180,             // gestationDuration
-                4,               // numberOfLegs
-                38.5,            // bodyTemperature
-                true             // hasFur
+                "Moumout",
+                120.0,
+                80.5,
+                "Herbivore",
+                "Forêt",
+                180,
+                4,
+                38.5,
+                true
         );
 
         System.out.println("Nom: " + myMammal.getName());
@@ -52,6 +52,5 @@ public class Main {
         System.out.println("Nombre de pattes: " + myMammal.getNumberOfLegs());
         System.out.println("Température corporelle: " + myMammal.getBodyTemperature() + "°C");
         System.out.println("A des poils ? " + (myMammal.isHasFur() ? "Oui" : "Non"));
-
     }
 }
