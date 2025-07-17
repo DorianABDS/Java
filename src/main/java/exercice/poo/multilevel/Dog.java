@@ -24,10 +24,6 @@ public class Dog extends Animal {
         this.isTrained = isTrained;
     }
 
-    public void bark() {
-        System.out.println(getName() + " aboie !");
-    }
-
     public String getSentenceDog() {
         return String.format(
                 " Je suis de race %s, et il est %s que je sois dressé.",
