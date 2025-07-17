@@ -31,26 +31,9 @@ public class Main {
         System.out.println("Couleur: " + myPhone.getColor());
         System.out.println("-------------------------------------");
 
-        Mammal myMammal = new Mammal(
-                "Moumout",
-                120.0,
-                80.5,
-                "Herbivore",
-                "Forêt",
-                180,
-                4,
-                38.5,
-                true
-        );
+        Dog dog = new Dog("WoufooUUU", 0.6, 10.0, "omnivore", "maison", 60, 4, 38.5, true, 5, "chien", false, "Labrador", true);
+        String history = dog.getSentenceIntro() + "\n" + dog.getSentenceAnimal() + "\n" + dog.getSentenceDog();
+        System.out.println(history);
 
-        System.out.println("Nom: " + myMammal.getName());
-        System.out.println("Taille: " + myMammal.getHeight());
-        System.out.println("Poids: " + myMammal.getWeight());
-        System.out.println("Régime: " + myMammal.getDiet());
-        System.out.println("Habitat: " + myMammal.getHabitat());
-        System.out.println("Gestation: " + myMammal.getGestationDuration() + " jours");
-        System.out.println("Nombre de pattes: " + myMammal.getNumberOfLegs());
-        System.out.println("Température corporelle: " + myMammal.getBodyTemperature() + "°C");
-        System.out.println("A des poils ? " + (myMammal.isHasFur() ? "Oui" : "Non"));
     }
 }
