@@ -17,15 +17,4 @@ public class Animal extends Mammal {
     private int age;
     private String species;
     private boolean isWild;
-
-    // Méthode retournant une phrase descriptive de l'animal
-    @Override
-    public String getSentence() {
-        return super.getSentence() + "\n" + String.format(
-                "J'ai %d ans, je suis une espèce de %s, et il est %s que je sois sauvage.",
-                age,
-                species,
-                isWild ? "vrai" : "faux"
-        );
-    }
 }

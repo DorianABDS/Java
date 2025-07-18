@@ -52,7 +52,8 @@ public class Main {
                 .isTrained(true)
                 .build();
 
-        System.out.println(dog.getSentence());
+        SentenceFormatter formatter = new SentenceFormatter();
+        System.out.println(formatter.sentence(dog));
         System.out.println("-------------------------------------");
     }
 }

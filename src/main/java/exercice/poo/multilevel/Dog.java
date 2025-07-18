@@ -16,14 +16,4 @@ public class Dog extends Animal {
     // Attributs représentant les propriétés d'un chien
     private String breed;
     private boolean isTrained;
-
-    // Méthode retournant une phrase descriptive d'un chien
-    @Override
-    public String getSentence() {
-        return super.getSentence() + "\n" + String.format(
-                " Je suis de race %s, et il est %s que je sois dressé.",
-                breed,
-                isTrained ? "vrai" : "faux"
-        );
-    }
 }
