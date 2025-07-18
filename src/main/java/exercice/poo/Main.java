@@ -32,7 +32,23 @@ public class Main {
         System.out.println("-------------------------------------");
 
         // Affichage des informations en multilevel des class Mammal, Animal et Dog
-        Dog dog = new Dog("WoufooUUU", 0.6, 10.0, "omnivore", "maison", 60, 4, 38.5, true, 5, "chien", false, "Labrador", true);
+        Dog dog = Dog.builder()
+                .name("WoufooUUU")
+                .height(0.6)
+                .weight(10.0)
+                .diet("omnivore")
+                .habitat("maison")
+                .gestationDuration(60)
+                .numberOfLegs(4)
+                .bodyTemperature(38.5)
+                .hasFur(true)
+                .age(5)
+                .species("chien")
+                .isWild(false)
+                .breed("Labrador")
+                .isTrained(true)
+                .build();
+
         String history = dog.getSentenceIntro() + "\n" + dog.getSentenceAnimal() + "\n" + dog.getSentenceDog();
         System.out.println(history);
         System.out.println("-------------------------------------");
