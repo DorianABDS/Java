@@ -31,8 +31,10 @@ public class Main {
         System.out.println("Couleur: " + myPhone.getColor());
         System.out.println("-------------------------------------");
 
+        // Affichage des informations en multilevel des class Mammal, Animal et Dog
         Dog dog = new Dog("WoufooUUU", 0.6, 10.0, "omnivore", "maison", 60, 4, 38.5, true, 5, "chien", false, "Labrador", true);
         String history = dog.getSentenceIntro() + "\n" + dog.getSentenceAnimal() + "\n" + dog.getSentenceDog();
         System.out.println(history);
+        System.out.println("-------------------------------------");
     }
 }

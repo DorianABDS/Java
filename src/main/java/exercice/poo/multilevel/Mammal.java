@@ -1,15 +1,21 @@
+// Déclaration du package
 package exercice.poo.multilevel;
 
+// Importation des annotations Lombok
 import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+// Déclaration de la classe Mammal avec annotations Lombok
+// Lombok génère automatiquement les getters, setters et les constructeurs
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Mammal {
+
+    // Attributs représentant les propriétés d'un mammifère
     private String name;
     private double height;
     private double weight;
@@ -20,6 +26,7 @@ public class Mammal {
     private double bodyTemperature;
     private boolean hasFur;
 
+    // Méthode retournant une phrase descriptive de l'animal
     public String getSentenceIntro() {
         return String.format(
                 "Je m'appelle %s, je mesure %.2f mètres, pèse %.2f kg, et je me nourris principalement de %s. " +
@@ -29,5 +36,4 @@ public class Mammal {
                 hasFur ? "vrai" : "faux"
         );
     }
-
 }
