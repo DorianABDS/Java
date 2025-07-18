@@ -25,7 +25,7 @@ public class Mammal {
     private boolean hasFur;
 
     // Méthode retournant une phrase descriptive d'un mammifère
-    public String getSentenceIntro() {
+    public String getSentence() {
         return String.format(
                 "Je m'appelle %s, je mesure %.2f mètres, pèse %.2f kg, et je me nourris principalement de %s. " +
                         "Je vis dans %s, j'ai une gestation de %d jours, %d pattes, une température corporelle de %.1f°C, " +

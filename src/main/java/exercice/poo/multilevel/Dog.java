@@ -18,8 +18,9 @@ public class Dog extends Animal {
     private boolean isTrained;
 
     // Méthode retournant une phrase descriptive d'un chien
-    public String getSentenceDog() {
-        return String.format(
+    @Override
+    public String getSentence() {
+        return super.getSentence() + "\n" + String.format(
                 " Je suis de race %s, et il est %s que je sois dressé.",
                 breed,
                 isTrained ? "vrai" : "faux"
