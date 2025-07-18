@@ -28,7 +28,7 @@ public class Animal extends Mammal {
                 " J'ai %d ans, je suis une espèce de %s, et il est %s que je sois sauvage.",
                 age,
                 species,
-                isWild ? "vrai" : "faux"
+                !isWild ? "vrai" : "faux"
         );
     }
 
