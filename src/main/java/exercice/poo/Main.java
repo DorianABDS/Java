@@ -34,6 +34,5 @@ public class Main {
         Dog dog = new Dog("WoufooUUU", 0.6, 10.0, "omnivore", "maison", 60, 4, 38.5, true, 5, "chien", false, "Labrador", true);
         String history = dog.getSentenceIntro() + "\n" + dog.getSentenceAnimal() + "\n" + dog.getSentenceDog();
         System.out.println(history);
-
     }
 }
