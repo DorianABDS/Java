@@ -7,29 +7,32 @@ public class Main {
     // Point d'entrée du programme
     public static void main(String[] args) {
 
+        // Instance de Car
         Car myCar = new Car("BMW", "Red", 500);
         // Affichage des informations de la voiture
-        System.out.println("Information de la voiture:");
-        System.out.println("Marque: " + myCar.getBrand());
-        System.out.println("Couleur: " + myCar.getColor());
-        System.out.println("Vitesse: " + myCar.getSpeed() + "km/h");
-        System.out.println("-------------------------------------");
+        System.out.println("Information de la voiture:\n" +
+                "Marque: " + myCar.getBrand() + "\n" +
+                "Couleur: " + myCar.getColor() + "\n" +
+                "Vitesse: " + myCar.getSpeed() + "km/h" + "\n" +
+                "-------------------------------------");
 
+        // Deuxième instance de Car
         Car myCar1 = new Car("Audi", "Jaune", 1000);
         // Affichage des informations de la voiture
-        System.out.println("Information de la voiture:");
-        System.out.println("Marque: " + myCar1.getBrand());
-        System.out.println("Couleur: " + myCar1.getColor());
-        System.out.println("Vitesse: " + myCar1.getSpeed() + "km/h");
-        System.out.println("-------------------------------------");
+        System.out.println("Information de la voiture:\n" +
+                "Marque: " + myCar1.getBrand() + "\n" +
+                "Couleur: " + myCar1.getColor() + "\n" +
+                "Vitesse: " + myCar1.getSpeed() + "km/h" + "\n" +
+                "-------------------------------------");
 
+        // Instance de Phone
         Phone myPhone = new Phone("Pixel", "Android", "Blanc");
         // Affichage des informations du téléphone
-        System.out.println("Information du téléphone:");
-        System.out.println("Marque: " + myPhone.getBrand());
-        System.out.println("Système d'exploitation: " + myPhone.getOs());
-        System.out.println("Couleur: " + myPhone.getColor());
-        System.out.println("-------------------------------------");
+        System.out.println("Information du téléphone:\n" +
+                "Marque: " + myPhone.getBrand() + "\n" +
+                "Système d'exploitation: " + myPhone.getOs() + "\n" +
+                "Couleur: " + myPhone.getColor() + "\n" +
+                "-------------------------------------");
 
         // Affichage des informations en multilevel des class Mammal, Animal et Dog
         Dog dog = Dog.builder()
@@ -52,8 +55,10 @@ public class Main {
                 .isTrained(true)
                 .build();
 
+        // Instance de SentenceFormatter
         SentenceFormatter formatter = new SentenceFormatter();
-        System.out.println(formatter.sentence(dog));
-        System.out.println("-------------------------------------");
+        // Affichage des informations de l'héritage multilevel des class Mammal, Animal et dog
+        System.out.println(formatter.sentence(dog) + "\n" +
+                "-------------------------------------");
     }
 }
