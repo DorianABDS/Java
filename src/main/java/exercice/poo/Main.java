@@ -37,7 +37,7 @@ public class Main {
                 // Animal
                 .age(5)
                 .species("chien")
-                .isWild(!false)
+                .isWild(true)
                 // Dog
                 .breed("Labrador")
                 .isTrained(true)
