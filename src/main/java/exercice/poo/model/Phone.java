@@ -34,4 +34,12 @@ public class Phone {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public void phoneInfo() {
+        System.out.println("Information du téléphone:\n" +
+                "Marque: " + this.getBrand() + "\n" +
+                "Système d'exploitation: " + this.getOs() + "\n" +
+                "Couleur: " + this.getColor() + "\n" +
+                "-------------------------------------");
+    }
 }

@@ -9,30 +9,18 @@ public class Main {
 
         // Instance de Car
         Car myCar = new Car("BMW", "Red", 500);
-        // Affichage des informations de la voiture
-        System.out.println("Information de la voiture:\n" +
-                "Marque: " + myCar.getBrand() + "\n" +
-                "Couleur: " + myCar.getColor() + "\n" +
-                "Vitesse: " + myCar.getSpeed() + "km/h" + "\n" +
-                "-------------------------------------");
+        // Appel de la methode de Car
+        myCar.carInfo();
 
         // Deuxième instance de Car
         Car myCar1 = new Car("Audi", "Jaune", 1000);
-        // Affichage des informations de la voiture
-        System.out.println("Information de la voiture:\n" +
-                "Marque: " + myCar1.getBrand() + "\n" +
-                "Couleur: " + myCar1.getColor() + "\n" +
-                "Vitesse: " + myCar1.getSpeed() + "km/h" + "\n" +
-                "-------------------------------------");
+        // Appel de la methode de Car
+        myCar1.carInfo();
 
         // Instance de Phone
         Phone myPhone = new Phone("Pixel", "Android", "Blanc");
-        // Affichage des informations du téléphone
-        System.out.println("Information du téléphone:\n" +
-                "Marque: " + myPhone.getBrand() + "\n" +
-                "Système d'exploitation: " + myPhone.getOs() + "\n" +
-                "Couleur: " + myPhone.getColor() + "\n" +
-                "-------------------------------------");
+        // Appel de la methode de Car
+        myPhone.phoneInfo();
 
         // Affichage des informations en multilevel des class Mammal, Animal et Dog
         Dog dog = Dog.builder()

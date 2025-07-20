@@ -36,4 +36,12 @@ public class Car {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
+    public void carInfo() {
+        System.out.println("Information de la voiture:\n" +
+                "Marque: " + this.getBrand() + "\n" +
+                "Couleur: " + this.getColor() + "\n" +
+                "Vitesse: " + this.getSpeed() + "km/h" + "\n" +
+                "-------------------------------------");
+    }
 }
