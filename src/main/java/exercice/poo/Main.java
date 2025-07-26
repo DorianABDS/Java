@@ -2,6 +2,7 @@ package exercice.poo;
 
 import exercice.poo.model.*;
 import exercice.poo.multilevel.*;
+import exercice.poo.taches.*;
 
 public class Main {
     // Point d'entrée du programme
@@ -45,8 +46,31 @@ public class Main {
 
         // Instance de SentenceFormatter
         SentenceFormatter formatter = new SentenceFormatter();
+
         // Affichage des informations de l'héritage multilevel des class Mammal, Animal et dog
         System.out.println(formatter.sentence(dog) + "\n" +
                 "-------------------------------------");
+
+        // Création d'une tâche (BASSE, MOYENNE, HAUTE)
+        Tache tache = new Tache("Faire les courses", Priority.HAUTE);
+
+        // Affiche les infos de la tâche
+        System.out.println(tache);
+
+        // Affiche la description de la priorité et si elle est urgente
+        System.out.println("Description : " + tache.getPriority().getDescription() + "\n" +
+                "Urgent : " + tache.getPriority().isUrgent() + "\n" +
+                "-------------------------------------");
+
+        PriorityDisplayer.display("Direct - HAUTE", Priority.HAUTE);
+        PriorityDisplayer.display("Direct - MOYENNE", Priority.MOYENNE);
+        PriorityDisplayer.display("Direct - BASSE", Priority.BASSE);
+
+        try {
+            Priority priority = Priority.fromLevel(4);
+            PriorityDisplayer.display("Trié par niveau de priorité", priority);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erreur : " + e.getMessage());
+        }
     }
 }
