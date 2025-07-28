@@ -1,5 +1,6 @@
 package exercice.poo;
 
+import exercice.poo.database.*;
 import exercice.poo.model.*;
 import exercice.poo.multilevel.*;
 import exercice.poo.taches.*;
@@ -72,5 +73,15 @@ public class Main {
         } catch (IllegalArgumentException e) {
             System.out.println("Erreur : " + e.getMessage());
         }
+
+        MySQLDatabase db = MySQLDatabase.builder()
+                .url("DB_URL")
+                .user("DB_USER")
+                .password("DB_PASSWORD")
+                .build();
+
+        db.connect();
+        db.printDatabaseInfo();
+        db.disconnect();
     }
 }

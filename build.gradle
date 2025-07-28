@@ -21,8 +21,18 @@ repositories {
 }
 
 dependencies {
+    // Lombok pour main
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // Lombok pour tests
     testCompileOnly 'org.projectlombok:lombok:1.18.30'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // MySQL
+    implementation 'mysql:mysql-connector-java:8.0.33'
+
+    // SLF4J
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    runtimeOnly 'org.slf4j:slf4j-simple:2.0.9'
 }
